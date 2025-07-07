@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/aspect-ratio@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/line-clamp@4"></script>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-300">
+        <img src="resources/dashboard bg.jpg" alt="" class="absolute inset-0 object-cover w-full h-full opacity-70">
+        <div class="container -mt-80 p-6 z-10 relative">
+            <h1 class="text-4xl font-bold">Contact Us</h1>
+            <p class="text-gray-800">We'd love to hear from you! <br> Please reach out with any questions or feedback.</p>
+        </div>
+        <div class="flex items-center justify-center w-full h-full bg-gray-300 bg-opacity-50">
+            <form class="bg-white p-6 rounded-lg shadow-md w-96 z-10 relative" action="https://api.web3forms.com/submit" method="POST">
+                <h1 class="text-lg font-bold mb-4">Get in Touch</h1>
+                <input type="hidden" name="access_key" value="817d826f-07f5-4568-adca-7114c11061e1">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" name="name" id="name" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" name="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea name="message" id="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required></textarea>
+                </div>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <button type="submit" class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600">Send Message</button>
+                <p class="mt-4 text-sm text-gray-600">Need help? <a href="index.html" class="text-teal-500 hover:underline">Visit our Help Center</a></p>   
+            </form>
+        </div>
+    </div>
+</body>
+</html>

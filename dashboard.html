@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="relative bg-gray-300">
+  <!-- Background Image -->
+  <div class="min-h-screen relative flex flex-col items-center justify-center">
+    <img src="resources/dashboard bg.jpg" alt="" class="absolute inset-0 object-cover w-full h-full opacity-70 z-0" />
+
+    <!-- Navbar -->
+    <nav class="absolute top-0 left-0 w-full bg-teal-500 shadow-md p-4 z-10">
+      <div class="container mx-auto flex flex-wrap items-center justify-between">
+        <a href="dashboard.html">
+          <img src="resources/luigi-high-resolution-logo-grayscale-transparent.png" alt="Logo Image" class="h-8 sm:h-10 w-auto object-contain ml-10" />
+        </a>
+        <ul class="flex flex-wrap gap-4 sm:gap-8 md:gap-16 justify-center mt-2 sm:mt-0 mr-10">
+          <li><a href="#services-overview" class="text-white hover:text-teal-200 hover:shadow-md">Services</a></li>
+          <li><a href="#pricing" class="text-white hover:text-teal-200 hover:shadow-md">Pricing</a></li>
+          <li><a href="contactUs.html" class="text-white hover:text-teal-200 hover:shadow-md">Contact Us</a></li>
+          <li><a href="index.html" class="text-white hover:text-teal-200 hover:shadow-md">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="container mt-36 p-6 z-10 relative text-center">
+      <h1 class="text-4xl font-bold text-black">LUIGE</h1>
+      <p class="text-gray-800 mt-4">
+        Welcome to your LUIGE. <br />
+        We Help You Grow Your Business with Meta Ads & Social Media Strategy.
+      </p>
+    </div>
+
+    <!-- About Us Button -->
+    <div class="container p-6 z-10 relative mt-10 text-center">
+      <button class="bg-teal-500 text-white py-2 px-12 rounded-lg hover:bg-teal-600" onclick="location.href='aboutUs.html'">About Us</button>
+    </div>
+  </div>
+
+  <!-- Services Overview -->
+  <section class="container mx-auto mt-10 p-6">
+    <h2 id="services-overview" class="text-3xl font-bold mb-6">Services Overview</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <!-- Service Card -->
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fas fa-laptop-code"></i>
+        <h3 class="text-xl font-semibold mb-2">Page Creation & Management</h3>
+        <p class="text-gray-600">We create and manage your web pages to ensure a seamless online presence.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fas fa-bullhorn"></i>
+        <h3 class="text-xl font-semibold mb-2">Ad Campaign Creation & Management</h3>
+        <p class="text-gray-600">We design and manage effective ad campaigns to boost your online visibility.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fas fa-chart-line"></i>
+        <h3 class="text-xl font-semibold mb-2">Followers Boosting</h3>
+        <p class="text-gray-600">We help increase your social media followers through targeted strategies.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fas fa-pencil-alt"></i>
+        <h3 class="text-xl font-semibold mb-2">Professional Post Design</h3>
+        <p class="text-gray-600">We create visually appealing and engaging posts for your social media.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fas fa-users"></i>
+        <h3 class="text-xl font-semibold mb-2">Social Media Strategy</h3>
+        <p class="text-gray-600">We develop tailored social media strategies to enhance your brand presence.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fas fa-chart-bar"></i>
+        <h3 class="text-xl font-semibold mb-2">Analytics & Reporting</h3>
+        <p class="text-gray-600">We provide in-depth analytics and reporting to track your social media performance.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fa-regular fa-chart-bar"></i>
+        <h3 class="text-xl font-semibold mb-2">Search Engine Optimization</h3>
+        <p class="text-gray-600">We optimize your website to rank higher in search engine results and drive organic traffic.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fas fa-comments"></i>
+        <h3 class="text-xl font-semibold mb-2">Community Engagement</h3>
+        <p class="text-gray-600">We engage with your community to build strong relationships and brand loyalty.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
+        <i class="fa-regular fa-comments"></i>
+        <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+        <p class="text-gray-600">We create and manage effective digital marketing campaigns to boost your online presence.</p>
+        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="bg-gray-200 py-16">
+    <div class="container mx-auto p-6">
+      <h2 id="pricing" class="text-3xl font-bold mb-6">Pricing Plans</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold mb-4">Basic Plan</h3>
+          <p class="text-gray-600 mb-4">Ideal for small businesses and startups.</p>
+          <p class="text-2xl font-bold mb-4">$49/month</p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>5 Posts/Month</li>
+            <li>1 Ad Campaign Creation</li>
+          </ul>
+          <button onclick="location.href='orderPage.html'" class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600 mt-6">Buy Now</button>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold mb-4">Standard Plan</h3>
+          <p class="text-gray-600 mb-4">Perfect for growing businesses.</p>
+          <p class="text-2xl font-bold mb-4">$99/month</p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>10 Posts/Month</li>
+            <li>2 Ad Campaign Creation</li>
+            <li>Follower Boosting</li>
+          </ul>
+          <button onclick="location.href='orderPage.html'" class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600">Buy Now</button>
+        </div>
+        <div class="bg-white p-6 h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold mb-4">Premium Plan</h3>
+          <p class="text-gray-600 mb-4">For established businesses looking to scale.</p>
+          <p class="text-2xl font-bold mb-4">$199/month</p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>20 Posts/Month</li>
+            <li>5 Ad Campaign Creation</li>
+            <li>Monthly Strategy Report</li>
+          </ul>
+          <button onclick="location.href='orderPage.html'" class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 LUIGI. All rights reserved.</p>
+      <div class="mt-4">
+        <a href="privacyPolicy&TermServices.html" class="text-gray-400 hover:text-white">Privacy Policy</a>
+        <span class="mx-2">|</span>
+        <a href="privacyPolicy&TermServices.html" class="text-gray-400 hover:text-white">Terms of Service</a>
+      </div>
+      <div class="mt-4">
+        <a href="https://www.facebook.com" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/forms@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/aspect-ratio@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/line-clamp@4"></script>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <img src="resources/dashboard bg.jpg" alt="" class="absolute inset-0 object-cover w-full h-full opacity-70">
+       <nav class="absolute top-0 left-0 w-full bg-teal-500  shadow-md p-4">
+           <ul class="flex space-x-16 justify-center">
+               <li><a href="#" class="text-white hover:text-teal-200 hover:shadow-md">Manage Ads</a></li>
+               <li><a href="#" class="text-white hover:text-teal-200 hover:shadow-md">View Analytics</a></li>
+               <li><a href="settings.html" class="text-white hover:text-teal-200 hover:shadow-md">Settings</a></li>
+                <li><a href="contactUs.html" class="text-white hover:text-teal-200 hover:shadow-md">Contact Us</a></li>
+                <li><a href="index.html" class="text-white hover:text-teal-200 hover:shadow-md">Logout</a></li>
+           </ul>
+       </nav>
+        <div class="container mt-52 p-6 z-10 relative">
+        <h1 class="text-4xl font-bold -mt-80 mr-4 ml-8 mb-4 z-10 relative">Settings</h1>
+        <p class="text-gray-800 mb-52 z-10 relative">Update your account settings below.</p>
+        </div>
+
+        <div class="container p-6 z-10 relative mt-10 mr-96">
+            <form class="bg-gradient-to-r from-teal-50 to-blue-50 p-6 rounded-lg shadow-md w-96">
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-medium text-gray-700">Change Username</label>
+                    <input type="text" id="username" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Update Email</label>
+                    <input type="email" id="email" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Update Password</label>
+                    <input type="password" id="password" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required>
+                </div>
+                <div class="mb-4">
+                    <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+                    <input type="password" id="confirm-password" class="mt-1 block w-full border border-gray-300 rounded-md p-2" required>
+                </div>
+                 <button type="submit" onclick="saveSettings()" class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600 mt-4">Save Settings</button>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+</html>
