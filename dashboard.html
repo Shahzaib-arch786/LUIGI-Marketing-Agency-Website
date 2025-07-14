@@ -1,169 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
-</head>
-<body class="relative bg-gray-300">
-  <!-- Background Image -->
-  <div class="min-h-screen relative flex flex-col items-center justify-center">
-    <img src="resources/dashboard bg.jpg" alt="" class="absolute inset-0 object-cover w-full h-full opacity-70 z-0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="relative bg-gray-300">
+    <!-- Background Image -->
+    <div
+      class="min-h-screen relative flex flex-col items-center justify-center"
+    >
+      <!-- Background Image -->
+      <img
+        src="resources/DBG.jpg"
+        alt="Background"
+        class="absolute inset-0 object-cover w-full h-full opacity-70 z-0"
+          />
 
-    <!-- Navbar -->
-    <nav class="absolute top-0 left-0 w-full bg-teal-500 shadow-md p-4 z-10">
-      <div class="container mx-auto flex flex-wrap items-center justify-between">
-        <a href="dashboard.html">
-          <img src="resources/luigi-high-resolution-logo-grayscale-transparent.png" alt="Logo Image" class="h-8 sm:h-10 w-auto object-contain ml-10" />
-        </a>
-        <ul class="flex flex-wrap gap-4 sm:gap-8 md:gap-16 justify-center mt-2 sm:mt-0 mr-10">
-          <li><a href="#services-overview" class="text-white hover:text-teal-200 hover:shadow-md">Services</a></li>
-          <li><a href="#pricing" class="text-white hover:text-teal-200 hover:shadow-md">Pricing</a></li>
-          <li><a href="contactUs.html" class="text-white hover:text-teal-200 hover:shadow-md">Contact Us</a></li>
-          <li><a href="index.html" class="text-white hover:text-teal-200 hover:shadow-md">Logout</a></li>
-        </ul>
+      <!-- Mini Navbar -->
+      <div
+        class="absolute top-0 left-0 w-full bg-gray-300 shadow-md px-4 py-2 z-10"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-2 max-w-screen-xl mx-auto"
+        >
+          <div class="text-sm md:text-md text-black">
+            <a href="#" class="hover:text-teal-700 transition duration-300">
+              <i class="fa-solid fa-envelope mr-1"></i> info@example.com
+            </a>
+          </div>
+          <div class="text-sm md:text-md text-black">
+            <a href="#" class="hover:text-teal-700 transition duration-300">
+              <i class="fa-solid fa-phone mr-1"></i> +1 234 567 890
+            </a>
+          </div>
+          <div class="flex space-x-4 text-lg mt-2 md:mt-0">
+            <a
+              href="#"
+              class="hover:text-teal-700 transition transform duration-300 hover:scale-125"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="hover:text-teal-700 transition transform duration-300 hover:scale-125"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="#"
+              class="hover:text-teal-700 transition transform duration-300 hover:scale-125"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="hover:text-teal-700 transition transform duration-300 hover:scale-125"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
       </div>
-    </nav>
 
-    <!-- Welcome Section -->
-    <div class="container mt-36 p-6 z-10 relative text-center">
-      <h1 class="text-4xl font-bold text-black">LUIGE</h1>
-      <p class="text-gray-800 mt-4">
-        Welcome to your LUIGE. <br />
-        We Help You Grow Your Business with Meta Ads & Social Media Strategy.
+      <!-- Main Navbar -->
+      <nav
+        class="absolute top-10 left-0 w-full bg-teal-500 shadow-md px-4 py-3 z-10"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto gap-4"
+        >
+          <a href="dashboard.html">
+            <img
+              src="resources/logo.png"
+              alt="Logo"
+              class="h-8 sm:h-10 w-auto object-contain hover:scale-105 transition-transform duration-300 cursor-pointer"
+            />
+          </a>
+          <ul
+            class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10 text-white text-sm sm:text-md"
+          >
+            <li>
+              <a
+                href="#services-overview"
+                class="hover:text-gray-200 hover:shadow-md"
+                >Our Services</a
+              >
+            </li>
+            <li>
+              <a href="#about-us" class="hover:text-gray-200 hover:shadow-md"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="contactUs.html"
+                class="hover:text-gray-200 hover:shadow-md"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <div class="mt-2 md:mt-0">
+            <button
+              class="bg-transparent border border-white text-white py-2 px-4 hover:bg-teal-600 transition duration-300 hover:scale-105"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Welcome Section -->
+      <div
+        class="absolute inset-0 flex items-center justify-left bg-black/60 z-5 px-4 text-left sm:text-center sm:px-8 lg:px-16 xl:px-24"
+      >
+        <div class="mt-56 sm:mt-36 max-w-3xl">
+          <h1 class="text-3xl sm:text-4xl font-bold text-white">NEXA</h1>
+          <p
+            class="text-white mt-4 font-bold text-2xl sm:text-3xl leading-relaxed text-justify justify-between text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl"
+          >
+            Welcome to your NEXA. <br />
+            We Help You Grow Your <br />
+            Business with Meta Ads <br />
+            & Social Media Strategy.
+          </p>
+          <div class="mt-8">
+            <button
+              class="bg-transparent text-white border border-white py-2 px-8 hover:bg-transparent transition duration-300 hover:scale-105"
+              onclick="location.href='aboutUs.html'"
+            >
+              About Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8 bg-white">
+      <h1 class="text-4xl font-bold mb-6 text-center text-black mt-10">
+        Why Choose Us As Your
+        <span class="text-teal-500">Digital Marketing Partner</span> In Lahore?
+      </h1>
+      <div
+        class="bg-transparent container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+      >
+        <!-- why US -->
+        <div class="bg-transparent p-6">
+          <h2 class="text-3xl font-bold mb-4 text-black">
+            Why We Are <span class="text-teal-500">Different</span> from Others ?
+          </h2>
+          <ul class="list-disc pl-5 text-gray-700">
+            <li class="mb-2">
+              <span class="font-bold">Local Expertise - </span>We understand the
+              local market dynamics and cultural nuances of Lahore, allowing us
+              to create campaigns that resonate with your target audience.
+            </li>
+            <li class="mb-2">
+              <span class="font-bold">Data-Driven Approach - </span>We leverage
+              data analytics to inform our strategies, ensuring that every
+              decision is backed by insights and metrics. No guesswork. Every
+              decision is backed by analytics, research, and real-time
+              performance tracking to ensure maximum ROI.
+            </li>
+            <li class="mb-2">
+              <span class="font-bold">Customized Strategies - </span>We don’t do
+              cookie-cutter campaigns. Every brand is unique, and so is our
+              approach — tailored to your business goals and industry needs.
+            </li>
+            <li class="mb-2">
+              <span class="font-bold">Full-Service Solutions - </span>We offer a
+              comprehensive suite of services, from strategy development to
+              execution and monitoring, ensuring a seamless experience for our
+              clients. From SEO, PPC, and social media to content marketing and
+              branding — everything under one roof to grow your digital
+              presence.
+            </li>
+            <li class="mb-2">
+              <span class="font-bold">Proven Track Record - </span>We have a
+              history of delivering successful campaigns and measurable results
+              for our clients in Lahore And also other cities. We’ve helped
+              startups and established businesses in Lahore scale online with
+              measurable success. Our results speak for themselves.
+            </li>
+            <li class="mb-2">
+              <span class="font-bold">Transparent Communication - </span>We
+              believe in open and honest communication, keeping you informed at
+              every step of the process. We keep you in the loop with regular
+              updates, reports, and insights into your campaign’s performance.
+              No jargon, no hidden metrics. You’ll always know what we’re doing,
+              why we’re doing it, and how it’s helping your business.
+            </li>
+          </ul>
+        </div>
+        <div class="bg-transparent p-6">
+          <img
+            src="resources/Why us.jpg"
+            alt="Why Choose Us"
+            class="w-full h-auto rounded-lg shadow-lg"
+          />
+          <p class="mt-4 text-gray-700">
+            We are committed to delivering exceptional results for our clients.
+            Our team of experts combines creativity with technical expertise to
+            drive impactful marketing solutions.
+            Whether you are a small business or a large enterprise, we have the
+            skills and experience to help you achieve your marketing goals.
+            <br />
+            <span class="font-bold">Contact us today</span> to learn more about
+            how we can help you grow your business in Lahore and beyond.
+            <br />
+            <span class="text-teal-500 font-bold">Let’s work together!</span>
+            <br />
+            <button onclick="location.href='contactUs.html'" class="bg-transparent text-teal-500 border border-teal-500 p-2 hover:bg-teal-600 transition duration-300 hover:scale-105 hover:text-white mt-4">
+              Contact Us
+            </button>
+        </p>
+      </div>
+    </div>
+
+    <!-- Services Overview -->
+    <section class="container mx-auto mt-10 p-6">
+      <h2 id="services-overview" class="text-4xl font-bold mb-6 text-center text-black">
+        Our Services
+      </h2>
+      <p class="text-center text-gray-600 mb-6">
+        We offer a wide range of digital marketing services to help your
+        business grow online. Our team of experts is dedicated to delivering
+        customized solutions that meet your unique needs.
       </p>
-    </div>
-
-    <!-- About Us Button -->
-    <div class="container p-6 z-10 relative mt-10 text-center">
-      <button class="bg-teal-500 text-white py-2 px-12 rounded-lg hover:bg-teal-600" onclick="location.href='aboutUs.html'">About Us</button>
-    </div>
-  </div>
-
-  <!-- Services Overview -->
-  <section class="container mx-auto mt-10 p-6">
-    <h2 id="services-overview" class="text-3xl font-bold mb-6">Services Overview</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <!-- Service Card -->
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fas fa-laptop-code"></i>
-        <h3 class="text-xl font-semibold mb-2">Page Creation & Management</h3>
-        <p class="text-gray-600">We create and manage your web pages to ensure a seamless online presence.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fas fa-bullhorn"></i>
-        <h3 class="text-xl font-semibold mb-2">Ad Campaign Creation & Management</h3>
-        <p class="text-gray-600">We design and manage effective ad campaigns to boost your online visibility.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fas fa-chart-line"></i>
-        <h3 class="text-xl font-semibold mb-2">Followers Boosting</h3>
-        <p class="text-gray-600">We help increase your social media followers through targeted strategies.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fas fa-pencil-alt"></i>
-        <h3 class="text-xl font-semibold mb-2">Professional Post Design</h3>
-        <p class="text-gray-600">We create visually appealing and engaging posts for your social media.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fas fa-users"></i>
-        <h3 class="text-xl font-semibold mb-2">Social Media Strategy</h3>
-        <p class="text-gray-600">We develop tailored social media strategies to enhance your brand presence.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fas fa-chart-bar"></i>
-        <h3 class="text-xl font-semibold mb-2">Analytics & Reporting</h3>
-        <p class="text-gray-600">We provide in-depth analytics and reporting to track your social media performance.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fa-regular fa-chart-bar"></i>
-        <h3 class="text-xl font-semibold mb-2">Search Engine Optimization</h3>
-        <p class="text-gray-600">We optimize your website to rank higher in search engine results and drive organic traffic.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fas fa-comments"></i>
-        <h3 class="text-xl font-semibold mb-2">Community Engagement</h3>
-        <p class="text-gray-600">We engage with your community to build strong relationships and brand loyalty.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-      <div class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition-shadow">
-        <i class="fa-regular fa-comments"></i>
-        <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
-        <p class="text-gray-600">We create and manage effective digital marketing campaigns to boost your online presence.</p>
-        <a href="#" class="text-teal-500 hover:underline">Learn more</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section class="bg-gray-200 py-16">
-    <div class="container mx-auto p-6">
-      <h2 id="pricing" class="text-3xl font-bold mb-6">Pricing Plans</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 class="text-xl font-semibold mb-4">Basic Plan</h3>
-          <p class="text-gray-600 mb-4">Ideal for small businesses and startups.</p>
-          <p class="text-2xl font-bold mb-4">$49/month</p>
-          <ul class="list-disc pl-5 mb-4">
-            <li>5 Posts/Month</li>
-            <li>1 Ad Campaign Creation</li>
-          </ul>
-          <button onclick="location.href='orderPage.html'" class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600 mt-6">Buy Now</button>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Service Card -->
+        <div
+          class="transform bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fas fa-laptop-code"></i>
+          <h3 class="text-xl font-semibold mb-2">Page Creation & Management</h3>
+          <p class="text-gray-600">
+            We create and manage your web pages to ensure a seamless online
+            presence.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 class="text-xl font-semibold mb-4">Standard Plan</h3>
-          <p class="text-gray-600 mb-4">Perfect for growing businesses.</p>
-          <p class="text-2xl font-bold mb-4">$99/month</p>
-          <ul class="list-disc pl-5 mb-4">
-            <li>10 Posts/Month</li>
-            <li>2 Ad Campaign Creation</li>
-            <li>Follower Boosting</li>
-          </ul>
-          <button onclick="location.href='orderPage.html'" class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600">Buy Now</button>
+        <div
+          class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fas fa-bullhorn"></i>
+          <h3 class="text-xl font-semibold mb-2">
+            Ad Campaign Creation & Management
+          </h3>
+          <p class="text-gray-600">
+            We design and manage effective ad campaigns to boost your online
+            visibility.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
         </div>
-        <div class="bg-white p-6 h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-          <h3 class="text-xl font-semibold mb-4">Premium Plan</h3>
-          <p class="text-gray-600 mb-4">For established businesses looking to scale.</p>
-          <p class="text-2xl font-bold mb-4">$199/month</p>
-          <ul class="list-disc pl-5 mb-4">
-            <li>20 Posts/Month</li>
-            <li>5 Ad Campaign Creation</li>
-            <li>Monthly Strategy Report</li>
-          </ul>
-          <button onclick="location.href='orderPage.html'" class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600">Buy Now</button>
+        <div
+          class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fas fa-chart-line"></i>
+          <h3 class="text-xl font-semibold mb-2">Followers Boosting</h3>
+          <p class="text-gray-600">
+            We help increase your social media followers through targeted
+            strategies.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+        </div>
+        <div
+          class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fas fa-pencil-alt"></i>
+          <h3 class="text-xl font-semibold mb-2">Professional Post Design</h3>
+          <p class="text-gray-600">
+            We create visually appealing and engaging posts for your social
+            media.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+        </div>
+        <div
+          class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fas fa-users"></i>
+          <h3 class="text-xl font-semibold mb-2">Social Media Strategy</h3>
+          <p class="text-gray-600">
+            We develop tailored social media strategies to enhance your brand
+            presence.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+        </div>
+        <div
+          class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fas fa-chart-bar"></i>
+          <h3 class="text-xl font-semibold mb-2">Analytics & Reporting</h3>
+          <p class="text-gray-600">
+            We provide in-depth analytics and reporting to track your social
+            media performance.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+        </div>
+        <div
+          class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fa-regular fa-chart-bar"></i>
+          <h3 class="text-xl font-semibold mb-2">Search Engine Optimization</h3>
+          <p class="text-gray-600">
+            We optimize your website to rank higher in search engine results and
+            drive organic traffic.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+        </div>
+        <div
+          class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fas fa-comments"></i>
+          <h3 class="text-xl font-semibold mb-2">Community Engagement</h3>
+          <p class="text-gray-600">
+            We engage with your community to build strong relationships and
+            brand loyalty.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
+        </div>
+        <div
+          class="bg-teal-50 p-4 rounded-lg shadow-md border border-teal-200 hover:shadow-lg transition duration-500 transform hover:scale-105"
+        >
+          <i class="fa-regular fa-comments"></i>
+          <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+          <p class="text-gray-600">
+            We create and manage effective digital marketing campaigns to boost
+            your online presence.
+          </p>
+          <a href="#" class="text-teal-500 hover:underline">Learn more</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 LUIGI. All rights reserved.</p>
-      <div class="mt-4">
-        <a href="privacyPolicy&TermServices.html" class="text-gray-400 hover:text-white">Privacy Policy</a>
-        <span class="mx-2">|</span>
-        <a href="privacyPolicy&TermServices.html" class="text-gray-400 hover:text-white">Terms of Service</a>
+    <!-- Pricing Section -->
+    <div class="container py-6 bg-white">
+      <section class="bg-white py-16">
+      <div class="container p-6">
+        <h2 id="pricing" class="text-4xl font-bold mb-6 text-center">Pricing Plans</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-gradient-to-r from-teal-200 to-teal-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform hover:scale-105"
+          >
+            <h3 class="text-xl font-semibold mb-4">Basic Plan</h3>
+            <p class="text-gray-600 mb-4">
+              Ideal for small businesses and startups.
+            </p>
+            <p class="text-2xl font-bold mb-4">$49/month</p>
+            <ul class="list-disc pl-5 mb-4">
+              <li>5 Posts/Month</li>
+              <li>1 Ad Campaign Creation</li>
+            </ul>
+            <button
+              onclick="location.href='orderPage.html'"
+              class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600 mt-6"
+            >
+              Buy Now
+            </button>
+          </div>
+          <div
+            class="bg-gradient-to-r from-teal-200 to-teal-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-500 transform hover:scale-105"
+          >
+            <h3 class="text-xl font-semibold mb-4">Standard Plan</h3>
+            <p class="text-gray-600 mb-4">Perfect for growing businesses.</p>
+            <p class="text-2xl font-bold mb-4">$99/month</p>
+            <ul class="list-disc pl-5 mb-4">
+              <li>10 Posts/Month</li>
+              <li>2 Ad Campaign Creation</li>
+              <li>Follower Boosting</li>
+            </ul>
+            <button
+              onclick="location.href='orderPage.html'"
+              class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600"
+            >
+              Buy Now
+            </button>
+          </div>
+          <div
+            class="bg-gradient-to-r from-teal-200 to-teal-50 p-6 h-auto rounded-lg shadow-md hover:shadow-lg transition duration-500 transform hover:scale-105"
+          >
+            <h3 class="text-xl font-semibold mb-4">Premium Plan</h3>
+            <p class="text-gray-600 mb-4">
+              For established businesses looking to scale.
+            </p>
+            <p class="text-2xl font-bold mb-4">$199/month</p>
+            <ul class="list-disc pl-5 mb-4">
+              <li>20 Posts/Month</li>
+              <li>5 Ad Campaign Creation</li>
+              <li>Monthly Strategy Report</li>
+            </ul>
+            <button
+              onclick="location.href='orderPage.html'"
+              class="w-full bg-teal-500 text-white p-2 rounded hover:bg-teal-600"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="mt-4">
-        <a href="https://www.facebook.com" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.twitter.com" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com" class="text-gray-400 hover:text-white mx-2"><i class="fab fa-linkedin"></i></a>
-      </div>
+      </section>
     </div>
-  </footer>
-</body>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-4 text-center">Contact Us</h2>
+        <p class="text-center text-gray-400 mb-4">
+          Have questions or need assistance? Reach out to us!
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <a
+            href="mailto:info@luigi.com"
+            class="text-gray-400 hover:text-white"
+            >Email Us</a
+          >
+          <a
+            href="tel:+1234567890"
+            class="text-gray-400 hover:text-white"
+            >Call Us</a
+          >
+        </div>
+      </div>
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold mb-4 text-center">Stay Connected</h2>
+        <p class="text-center text-gray-400 mb-4">
+          Join our community and stay updated with the latest news and offers.
+        <p class="text-center">Follow us on social media:</p>
+
+      </div>
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 LUIGI. All rights reserved.</p>
+        <div class="mt-4">
+          <a
+            href="privacyPolicy&TermServices.html"
+            class="text-gray-400 hover:text-white"
+            >Privacy Policy</a
+          >
+          <span class="mx-2">|</span>
+          <a
+            href="privacyPolicy&TermServices.html"
+            class="text-gray-400 hover:text-white"
+            >Terms of Service</a
+          >
+        </div>
+        <div class="mt-4">
+          <a
+            href="https://www.facebook.com"
+            class="text-gray-400 hover:text-white mx-2"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.twitter.com"
+            class="text-gray-400 hover:text-white mx-2"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com"
+            class="text-gray-400 hover:text-white mx-2"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com"
+            class="text-gray-400 hover:text-white mx-2"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
