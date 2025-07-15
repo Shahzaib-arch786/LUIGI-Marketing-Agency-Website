@@ -53,3 +53,14 @@ const signUpForm = () => {
     return true; 
 }
 
+if (!document.querySelector('#ft7ztkji0g')) {
+		var newDiv = document.createElement('div');
+		newDiv.setAttribute('key', 'Online Store Counter');
+		newDiv.setAttribute('class', 'ft');
+		newDiv.setAttribute('id', 'ft7ztkji0g');
+		var newScript = document.createElement('script');
+		newScript.setAttribute('src', 'https://wdg.fouita.com/widgets/0x2a7c87.js');
+		newDiv.appendChild(newScript);
+
+		document.body.appendChild(newDiv);
+	}
